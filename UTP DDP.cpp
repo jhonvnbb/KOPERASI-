@@ -37,7 +37,8 @@ using namespace std;
 	 }if(k==2){
 	 	goto awal;
 	 }if(k==3){
-	 	goto awal1;
+	 	cout<<"SEE YOU, INGAT BAYAR BANG";
+	 	return 0;
 	 }
  	
  	awal2:
@@ -101,13 +102,35 @@ using namespace std;
  
 	cout<<"-----------------------------------"<<endl;
 	cout<<"TUGAS UTP DDP"<<endl;
-	cout<<"PEMINJAMAN UANG DI KOPERASI"<<endl;
+	cout<<"PEMINJAMAN UANG DI KOPERASI HEANG"<<endl;
 	cout<<"JHON V NABABAN \t NPM : 2217051087"<<endl;
 	cout<<"YUSUF ARIFIN \t NPM : 2217051158"<<endl;
 	cout<<"-----------------------------------"<<endl;
     system("pause");
     system("cls");
      
+    struct {
+
+    char nama[50];
+	char alamat[100];
+	char nomor_hp[120];
+	char nik[20];
+}
+	pendaftar1;
+	
+	cout<<"MASUKKAN NAMA :";
+	cin>>pendaftar1.nama;
+	cout<<"MASUKKAN ALAMAT :";
+	cin>>pendaftar1.alamat;
+	cout<<"MASUKKAN NOMOR HANDPHONE :";
+	cin>>pendaftar1.nomor_hp;
+	cout<<"MASUKKAN NIK :";
+	cin>>pendaftar1.nik;
+	cout<<endl;
+	system("pause");
+    system("cls");
+	
+	
     cout<<"-----------------------------------"<<endl;
     cout<<"DATA PINJAMAN"<<endl;
     int n,i,total,deret,kelipatan_pinjaman,x;
@@ -117,8 +140,8 @@ using namespace std;
     cout<<"TOTAL PINJAMAN : "<<endl;
     cin>>x;
     kelipatan_pinjaman=x/100000;
-    cout<<"KELIPATAN PINJAMAN : "<<kelipatan_pinjaman<<endl;
-    cout<<"MASUKKAN KELIPATAN PINJAMAN : ";
+    cout<<"MAKA KELIPATAN PINJAMAN ANDA : "<<kelipatan_pinjaman<<endl;
+    cout<<"MASUKKAN KELIPATAN PINJAMAN ANDA : ";
     cin>>deret;
     cout<<"-----------------------------------"<<endl;
     system("pause");
@@ -162,5 +185,20 @@ using namespace std;
 	}
 	total_harga=bunga+total;
 	cout<<"TOTAL PINJAMAN DENGAN BUNGA \t: "<<"Rp."<<total_harga<<",00"<<endl;
+	cout<<endl;
+	system ("pause");
+	system ("cls");
 	
+	cout<<"_____________________________________________"<<endl;
+	cout<<"---------------------------------------------"<<endl;
+	cout<<"STATUS PINJAMAN"<<endl;
+	cout<<"NAMA \t\t:"<<pendaftar1.nama<<endl;
+	cout<<"ALAMAT \t\t:"<<pendaftar1.alamat<<endl;
+	cout<<"NOMOR HP \t:"<<pendaftar1.nomor_hp<<endl;
+	cout<<"NIK \t\t:"<<pendaftar1.nik<<endl;
+	cout<<"TOTAL PINJAMAN DENGAN BUNGA : "<<"Rp."<<total_harga<<",00"<<endl;
+	cout<<"---------------------------------------------"<<endl;
+	cout<<"_____________________________________________"<<endl;
+	
+	return 0;
 }
