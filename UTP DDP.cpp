@@ -51,7 +51,7 @@ using namespace std;
 }
 	pendaftar;
 	
-	cout<<"MASUKKAN NAMA :";
+	cout<<"MASUKKAN NAMA PANGGILAN :";
 	cin>>pendaftar.nama;
 	cout<<"MASUKKAN ALAMAT :";
 	cin>>pendaftar.alamat;
@@ -118,7 +118,7 @@ using namespace std;
 }
 	pendaftar1;
 	
-	cout<<"MASUKKAN NAMA :";
+	cout<<"MASUKKAN NAMA PANGGILAN :";
 	cin>>pendaftar1.nama;
 	cout<<"MASUKKAN ALAMAT :";
 	cin>>pendaftar1.alamat;
@@ -199,6 +199,6 @@ using namespace std;
 	cout<<"TOTAL PINJAMAN DENGAN BUNGA : "<<"Rp."<<total_harga<<",00"<<endl;
 	cout<<"---------------------------------------------"<<endl;
 	cout<<"_____________________________________________"<<endl;
-	
-	return 0;
+	system ("pause");
+	goto awal1;
 }
