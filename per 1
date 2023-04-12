@@ -1,0 +1,212 @@
+///*Nomor 3
+//Anda akan diberikan array N bilangan bulat dan Anda diminta mencetak bilangan bulat dalam urutan terbalik.
+//Format Input
+//Baris pertama input berisi N, di mana N adalah banyaknya bilangan bulat. Baris berikutnya berisi N bilangan bulat yang dipisahkan spasi.
+//Format Output
+//Cetak  N array bilangan bulat dalam urutan terbalik, dipisahkan oleh spasi dalam satu baris.
+//Constraint
+//1 < N < 1000*/
+//
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int N;
+//    cin>>N;
+//    int bolu[N];
+//    for(int i=0; i<N; i++){
+//        cin>>bolu[i];
+//    }for(int j=N-1; j>=0; j--){
+//        cout<<bolu[j]<<" ";
+//    }
+//}
+//
+///*Nomor 4
+//Buat program untuk membaca input dari keyboard. Data inputan ditampung ke dalam tipe variabel yang sesuai.
+//Format Input
+//Terdiri dari 5 input data a b c d e, yang masing-masing merupakan data dengan tipe integer, long, char, float dan double
+//Format Output
+//Cetak tiap elemen  pada baris baru dengan urutan yang sama dengan input.
+//Catatan: untuk nilai float dicetak hingga 3 tempat desimal, dan untuk nilai double dicetak hingga 9 tempat desimal.
+//*/
+//
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int a;
+//    long b;
+//    char c;
+//    float d;
+//    double e;
+//    scanf("%d %ld %c %f %lf" , &a, &b, &c, &d, &e);
+//    printf("%d\n%ld\n%c\n%.3f\n%.9lf\n",a,b,c,d,e);
+//}
+//
+///*Nomor 5
+//Task
+//Read  numbers from stdin and print their sum to stdout.
+//Input Format
+//One line that contains  space-separated integers: a, b, and c.
+//Constraints
+//1 < a,b,c <1000
+//Output Format
+//Print the sum of the three numbers on a single line.
+//*/
+//
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int a,b,c,hasil;
+//    cin>>a>>b>>c;
+//    hasil=a+b+c;
+//    cout<<hasil;
+//}
+//
+///*Nomor 6
+//Tulis sebuah fungsi int max_of_four(int a, int b, int c, int d) yang mengembalikan maksimum dari empat argumen yang diterimanya.
+//*/
+//#include <iostream>
+//using namespace std;
+//
+//int max_of_four(int a, int b, int c, int d) {
+//    int max = a;
+//    if (b > max) {
+//        max = b;
+//    }
+//    if (c > max) {
+//        max = c;
+//    }
+//    if (d > max) {
+//        max = d;
+//    }   
+//    return max;
+//}
+//int main(){
+//    int a,b,c,d;
+//    cin>>a>>b>>c>>d;
+//    cout<<max_of_four(a,b,c,d);
+//    return 0;
+//}
+
+
+// Online C++ compiler to run C++ program online
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int n,angka=0,total;
+//    cin>>n;
+//    for(int i=0; i<n; i++){
+//        cin>>angka;
+//        total+=angka;
+//    } cout<<total;
+//
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int n,data=0,total;
+//    float rata;
+//    cin>>n;
+//    for(int i=0; i<n; i++){
+//        cin>>data;
+//        total+=data;
+//    } cout<<total<<endl;
+//    rata = total/n;
+//    cout<<"Rata-rata = "<<rata; 
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//	int n;
+//	cin>>n;
+//	int arr[n];
+//	for(int i=0; i<n; i++){
+//		cin>>arr[i];
+//	} for (int j=n-1; j>=0; j--){
+//		cout<<arr[j]<<" ";
+//	}
+//}
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//	int a;
+//	long n;
+//	char c;
+//	float d;
+//	double i;
+//	scanf("%d %ld %c %f %lf ", &a, &n, &c, &d, &i);
+//	printf("%d\n %ld\n %c\n %.3f\n %.9lf\n", a, n, c, d, i );
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int max_of_four(int a, int b, int c, int d){
+//	int max = a;
+//	if(b > max){
+//		max = b;
+//	} if (c > max){
+//		max = c;
+//	} if (max = d){
+//		max = d;
+//			} 
+//	return max;
+//} 
+//int main(){
+//	int a,b,c,d;
+//	cin>>a>>b>>c>>d;
+//	cout << max_of_four (a,b,c,d);
+//	return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//	const int baris = 3;
+//	const int kolom = 3;
+//	int oii [baris] [kolom];
+//	for (int i=0; i<baris; i++){
+//		for(int j=0; j<kolom; j++){
+//			cout<<"Masukkan Elemen nilai ["<<i+1<<"] ["<<j+1<<"] ";
+//			cin>> oii [i][j];
+//		}
+//	}
+//	for (int i=0; i<baris; i++){
+//		for(int j=0; j<kolom; j++){ 
+//		cout << oii [i] [j] <<" ";
+//	} cout<<endl;
+//}
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int tambah (int a, int b){
+//	return a+b;
+//} 
+//int kurang (int a, int b){
+//	return a-b;
+//}
+//int callfunc (int (*ptr) (int, int), int a, int b){
+//	return (*ptr) (a , b) ;
+//}
+//int main(){
+//	int (*ptr[]) (int , int ) = {tambah , kurang} ;
+//	for (int i=0; i<2; i++){
+//		cout<<callfunc(*ptr[i],10,5)<<endl;
+//	}
+//}
+
+#include <iostream>
+using namespace std;
+int main(){
+	int a = 15;
+	int b = 5;
+	cout << a+ b<<endl;
+	cout <<a - b;
+}
