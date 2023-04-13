@@ -76,3 +76,65 @@ cout<< "Panjang: "<< psg.getPanjang () << endl;
 cout<< "Lebar: "<< psg.getLebar() << endl; 
 cout<< "Luas: "<< psg.Luas();
 }
+
+#POINTER
+#include <iostream>
+using namespace std;
+
+int main() {
+   int a = 10;
+   int *ptr = &a;
+
+   cout << "Nilai a: " << a << endl;  // output: Nilai a: 10
+   cout << "Alamat a: " << &a << endl;  // output: Alamat a: <alamat memori variabel a>
+   cout << "Nilai ptr: " << ptr << endl;  // output: Nilai ptr: <alamat memori variabel a>
+   cout << "Nilai yang ditunjuk oleh ptr: " << *ptr << endl;  // output: Nilai yang ditunjuk oleh ptr: 10
+
+   *ptr = 20;
+   cout << "Setelah diubah, nilai a: " << a << endl;  // output: Setelah diubah, nilai a: 20
+
+   return 0;
+}
+
+#Function
+#include <iostream>
+
+using namespace std;
+
+// deklarasi function
+int tambah(int a, int b);
+void cetak(string teks);
+
+int main() {
+    int x = 10, y = 5;
+    int hasil = tambah(x, y); // memanggil function tambah() dan menyimpan hasilnya ke variabel hasil
+    cetak("Hasil penjumlahan adalah: " + to_string(hasil)); // memanggil function cetak()
+    
+    return 0;
+}
+
+// definisi function tambah()
+int tambah(int a, int b) {
+    return a + b;
+}
+
+// definisi function cetak()
+void cetak(string teks) {
+    cout << teks << endl;
+}
+
+#C-String
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char kalimat[] = "Halo, dunia!"; // inisialisasi C string
+    int panjang = strlen(kalimat); // menghitung panjang C string
+    
+    cout << "Kalimat: " << kalimat << endl;
+    cout << "Panjang kalimat: " << panjang << endl;
+    
+    return 0;
+}
