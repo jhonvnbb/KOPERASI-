@@ -1,3 +1,4 @@
+#####1#####
 #include <iostream>
 #include <cstring>
 
@@ -50,3 +51,47 @@ void salinString(char *str1, const char *str2) {
 int tambah(int *a, int *b) {
     return *a + *b;
 }
+
+#####2#####
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+// deklarasi class Pekerjaan
+class Pekerjaan {
+    private:
+        char nama[50];
+        int gaji;
+    public:
+        Pekerjaan(char* nama, int gaji) {
+            strcpy(this->nama, nama);
+            this->gaji = gaji;
+        }
+        char* getNama() {
+            return nama;
+        }
+        int getGaji() {
+            return gaji;
+        }
+};
+
+// deklarasi function
+void printPekerjaan(Pekerjaan *kerja);
+
+int main() {
+    Pekerjaan *kerjaPtr;
+    Pekerjaan kerja1("Programmer", 10000000);
+    kerjaPtr = &kerja1;
+
+    printPekerjaan(kerjaPtr);
+    
+    return 0;
+}
+
+// definisi function printPekerjaan()
+void printPekerjaan(Pekerjaan *kerja) {
+    cout << "Nama Pekerjaan: " << kerja->getNama() << endl;
+    cout << "Gaji: " << kerja->getGaji() << endl;
+}
+
