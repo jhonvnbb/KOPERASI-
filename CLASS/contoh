@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+// deklarasi struct
+struct Mahasiswa {
+    char nama[50];
+    int umur;
+};
+
+// deklarasi function
+void cetakMahasiswa(Mahasiswa *mhs);
+void salinString(char *str1, const char *str2);
+int tambah(int *a, int *b);
+
+int main() {
+    // contoh penggunaan struct
+    Mahasiswa mhs1 = {"Andi", 20};
+    cetakMahasiswa(&mhs1);
+    
+    // contoh penggunaan pointer
+    int x = 5, y = 10;
+    int *ptrX = &x, *ptrY = &y;
+    int hasil = tambah(ptrX, ptrY);
+    cout << "Hasil penjumlahan " << *ptrX << " dan " << *ptrY << " adalah " << hasil << endl;
+    
+    // contoh penggunaan C string
+    char nama1[] = "Andi";
+    char nama2[50];
+    salinString(nama2, nama1);
+    cout << "Nama1: " << nama1 << endl;
+    cout << "Nama2: " << nama2 << endl;
+    
+    return 0;
+}
+
+// definisi function cetakMahasiswa()
+void cetakMahasiswa(Mahasiswa *mhs) {
+    cout << "Nama: " << mhs->nama << endl;
+    cout << "Umur: " << mhs->umur << endl;
+}
+
+// definisi function salinString()
+void salinString(char *str1, const char *str2) {
+    strcpy(str1, str2);
+}
+
+// definisi function tambah()
+int tambah(int *a, int *b) {
+    return *a + *b;
+}
